@@ -1,0 +1,17 @@
+{
+  "name": "adminlog",
+  "version": "1.0.0",
+  "description": "logs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abdallah",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.9",
+    "whatwg-url": "^11.0.0"
+  }
+}

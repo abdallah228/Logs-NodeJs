@@ -6,7 +6,7 @@ const AdminLog= mongoose.Schema({
     method: String,
     url: String,
     user_id:Number,
-    body_data:Object
+    body:Object
 }, {
     timestamps: true
 });

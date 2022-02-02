@@ -2,9 +2,9 @@
   "name": "adminlog",
   "version": "1.0.0",
   "description": "logs",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon app.js"
   },
   "author": "abdallah",
   "license": "ISC",
@@ -13,5 +13,8 @@
     "express": "^4.17.2",
     "mongoose": "^6.1.9",
     "whatwg-url": "^11.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

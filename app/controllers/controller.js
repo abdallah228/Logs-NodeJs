@@ -1,7 +1,7 @@
 const AdminLog = require('../models/models.js');
 
 // Create and Save a new Todo
-exports.create = (req, res) => {
+exports.create =  (req, res) => {
     // Validate request
     // if(!req.body.description) {
     //     return res.status(400).send({
@@ -14,13 +14,13 @@ exports.create = (req, res) => {
         method: req.body.method , 
         url: req.body.url,
         user_id : req.body.user_id,
-        body_data: req.body.body_data,
+        body: req.body.body,
     });
 
-    // Save Todo in the database
-    log.save()
-    .then(data => {
-        res.send(data);
+    // Save logs in the database
+     log.save()
+    .then(async (data) => {
+        await res.send(data);
     }).catch(err => {
         res.status(500).send({
             message: err.message || "Some error occurred while creating the log."
